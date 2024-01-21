@@ -16,7 +16,7 @@ body {
 
   .card {
     width: 700px;
-    height: 500px;
+    height: 400px;
     position: relative;
     perspective: 1000px;
     transform-style: preserve-3d;
@@ -118,6 +118,19 @@ body {
     transform: translateX(-50%);
     /* font-size: 50px; */
     color: black;
+  }
+
+  @media (max-width: 767px) {
+    .container {
+      padding: 20px;
+    }
+    .card {
+      width: 100%;
+      height: auto;
+    }
+    .centered-text {
+      font-size: 14px;
+    }
   }
 
 
